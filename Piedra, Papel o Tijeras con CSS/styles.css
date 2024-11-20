@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --secundario: #1e806f;
+    --principal: #18685b;
+    --fondo: #fffaea;
+}
+
+body {
+    background: linear-gradient(to right,#fffaea, #ffe9a1);
+    color: var(--principal);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--principal);
+    color: var(--fondo);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+    font-size: 25px;
+}
+
+.marcador {
+    background-color: var(--secundario);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--fondo);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--principal);
+    background-color: var(--fondo);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--secundario);
+
+}
+
+.marcador .nombre-jugador {
+    right: 85%;
+}
+
+.marcador .nombre-computadora {
+    left: 85%;
+}
+
+.marcador .puntos {
+    font-size: 1.6rem;
+}
+
+.elegi-tu-arma {
+    margin-bottom: 2rem;
+}
+
+.elegi-tu-arma h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 2.5rem;
+    background-color: var(--principal);
+    width: 5rem;
+    height: 5rem;
+    size: 100px;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.arma:hover {
+    border: 2px solid --principal;
+    border-color: var(--principal);
+    background-color: #ffecae;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    scale: 1.2;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion {
+    color: var(--fondo);
+    background-color: var(--secundario);
+    border-radius: .25rem;
+    padding-inline: .25rem;
+}
+
+.btn {
+    border: 2px solid var(--principal);
+    line-height: 1;
+    background: linear-gradient(to right,#18685b,#1e806f );
+    color: var(--fondo);
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #fffaea, #fffaea);
+    color: var(--principal);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    scale: 1.1;
+}
+
+.disabled {
+    display: none;
+}
