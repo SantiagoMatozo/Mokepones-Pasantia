@@ -1,0 +1,51 @@
+/* Estilo general */
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del juego */
+.cont-juego {
+    position: relative;
+    background-color: #222;
+    width: 640px;
+    height: 480px;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+/* Pelota */
+.pelota {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Paletas */
+.jugador {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+}
+
+#player {
+    left: 10px;
+}
+
+#pc {
+    right: 10px;
+}

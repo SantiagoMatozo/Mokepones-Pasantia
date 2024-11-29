@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Rubik+Mono+One&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+header{
+    background: linear-gradient(to bottom, rgb(217 174 90),rgb(200 76 56));
+    height: 9.5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22.5px;
+    color: #fff;
+}
+
+.fondo{
+    display: flex;
+}
+
+img{
+    display: flex;
+    width: 100%;
+    height: 90.5vh;
+    z-index: 0; /* Asegura que la imagen esté detrás */
+    position: relative; /* Asegura que el z-index de la imagen funcione */
+}
+
+.cont-juego{
+    display: flex;
+    width: 64.6vw;
+    height: 62.1vh;
+    position: absolute;
+    top: 20.5vh;
+    left: 8vw;
+    z-index: 1;
+}
+
+.ball{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
+}
+
+.jugador {
+    position: absolute;
+    width: 10px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#player1 {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 45px); /* Centra inicialmente */
+}
+
+#player2 {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 45px); /* Centra inicialmente */
+}
+
+
+.cont-red {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+} 
+
+.red {
+    width: 2px;
+    height: 550px;
+    border: 3px solid #fff;
+    border-style: dotted;
+}
